@@ -136,5 +136,10 @@
         <rollback>
         </rollback>
     </changeSet>
+    <changeSet id="2017-04-18-17-00" author="Stanislau_Halauniou@epam.com">
+        <comment>Create unique constraint for offers</comment>
+        <addUniqueConstraint tableName="offer" columnNames="clinic_id, animal_id, clinic_service_id"
+                             constraintName="unique_offer"/>
+    </changeSet>
 
 </databaseChangeLog>

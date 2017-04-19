@@ -27,7 +27,6 @@ dependencies {
     compile 'org.springframework.boot:spring-boot-starter-data-jpa'
     compile 'org.springframework.boot:spring-boot-starter-security'
     compile 'org.springframework.boot:spring-boot-starter-aop'
-    //compile 'org.thymeleaf.extras:thymeleaf-extras-springsecurity4'
     compile 'com.google.code.gson:gson'
     compile 'org.postgresql:postgresql'
     compile 'org.apache.commons:commons-lang3:3.3.2'

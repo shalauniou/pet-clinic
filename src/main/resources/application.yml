@@ -1,0 +1,22 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/petclinic
+    username: postgres
+    password: 123456
+
+  jpa:
+    #database-platform: org.hibernate.dialect.PostgreSQL94Dialect
+    show-sql: true
+    hibernate.ddl-auto: none
+    hibernate.naming.implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyJpaCompliantImpl
+    hibernate.format_sql: true
+
+security.basic.enabled: false
+
+liquibase:
+  change-log: classpath:/liquibase/changelog.xml
+  url: jdbc:postgresql://localhost:5432/petclinic
+  user: postgres
+  password: 123456
+
+
